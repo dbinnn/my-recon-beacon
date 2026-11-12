@@ -1,0 +1,29 @@
+2026-10-29 16:29:41,653 [INFO] Beacon starting. Interval: 300s. C2: http://127.0.0.1:8000
+2026-10-29 16:29:41,653 [INFO] Starting recon cycle...
+2026-10-29 16:29:42,897 [ERROR] Critical error during cycle: name 'addr' is not defined
+Traceback (most recent call last):
+  File "C:\Users\admin\OneDrive\Desktop\my_recon_beacon\main.py", line 31, in run_cycle
+    data = self.collector.collect()
+  File "C:\Users\admin\OneDrive\Desktop\my_recon_beacon\collector.py", line 28, in collect
+    "network": self._get_network_info(),
+               ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\admin\OneDrive\Desktop\my_recon_beacon\collector.py", line 79, in _get_network_info
+    "family": "IPv4" if addr.family == 2 else "IPv6" if addr.family == 10 else "Other",
+                        ^^^^
+NameError: name 'addr' is not defined. Did you mean: 'addrs'?
+2026-10-29 16:36:21,369 [INFO] Beacon starting. Interval: 300s. C2: http://127.0.0.1:8000
+2026-10-29 16:36:21,371 [INFO] Starting recon cycle...
+2026-10-29 16:36:29,805 [INFO] Collected 9 top-level keys. Hash: 0121ea501104de54e497adbc673935d96db2b3a11be7d9476b1f15d266326354
+2026-10-29 16:36:29,826 [INFO] Cycle completed successfully.
+2026-10-29 16:46:28,477 [INFO] Beacon starting. Interval: 300s. C2: http://127.0.0.1:8000
+2026-10-29 16:46:28,477 [INFO] Starting recon cycle...
+2026-10-29 16:46:35,160 [INFO] Collected 10 top-level keys. Hash: 3c683fbc753c0cac2d6c476fc2d776504a3b15ae1cec93ea986c06e74ce883c1
+2026-10-29 16:46:35,178 [INFO] Cycle completed successfully.
+2026-10-29 17:23:44,358 [INFO] Beacon starting. Interval: 300s. C2: http://127.0.0.1:8000
+2026-10-29 17:23:44,359 [INFO] Starting recon cycle...
+2026-10-29 17:23:49,939 [INFO] Collected 10 top-level keys. Hash: ec9fffb4daa6f9b9932f3c5c9a6d5b4ff9d0be9720415d13e2f74fd4f0427694
+2026-10-29 17:23:49,963 [INFO] Cycle completed successfully.
+2026-10-29 17:27:10,602 [INFO] Beacon starting. Interval: 300s. C2: http://127.0.0.1:8000
+2026-10-29 17:27:10,603 [INFO] Starting recon cycle...
+2026-10-29 17:27:14,178 [INFO] Collected 10 top-level keys. Hash: b2f0f5092d558237bab9ac6d9c9ffa9dffafe1d174af3632303e19cb7c6ecfd3
+2026-10-29 17:27:14,195 [INFO] Cycle completed successfully.
